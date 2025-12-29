@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reva Kamble | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .accent-text {
+            color: #fbbf24;
+        }
+
+        .card {
+            background: #1e293b;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #fbbf24;
+            box-shadow: 0 10px 30px -10px rgba(251, 191, 36, 0.3);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        @keyframes pulse-slow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px 10px rgba(34, 197, 94, 0);
+            }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-700">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter uppercase">Reva <span
+                    class="accent-text">Kamble</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="nav-link hover:text-amber-400 transition">About</a>
+                <a href="#experience" class="nav-link hover:text-amber-400 transition">Experience</a>
+                <a href="#achievements" class="nav-link hover:text-amber-400 transition">Awards</a>
+                <a href="#sports" class="nav-link hover:text-amber-400 transition">Sports</a>
+                <a href="#contact"
+                    class="bg-amber-500 text-slate-900 px-4 py-2 rounded-full font-bold hover:bg-amber-400 transition transform hover:scale-110">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="pt-40 pb-24 px-6 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <span
+                    class="inline-block px-4 py-1 rounded-full border border-amber-500/30 text-amber-500 text-xs font-bold mb-6 uppercase tracking-widest bg-amber-500/5">T.Y.
+                    B.Com Student | Athlete | Model</span>
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight tracking-tight">
+                    Driven by <span class="accent-text">Discipline.</span>
+                </h1>
+            </div>
+            <p data-aos="fade-up" data-aos-delay="200"
+                class="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Bridging the gap between corporate strategy and athletic resilience. Award-winning researcher and
+                professional badminton player with a focus on CRM and Branding.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="400" class="flex flex-wrap justify-center gap-4">
+                <a href="#contact"
+                    class="px-8 py-3 bg-white text-slate-900 font-bold rounded-lg hover:bg-amber-500 transition shadow-lg shadow-white/5">Hire
+                    Me</a>
+                <a href="#experience"
+                    class="px-8 py-3 border border-slate-700 font-bold rounded-lg hover:bg-slate-800 transition">View
+                    Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-slate-800/50 border-y border-slate-700 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <p class="text-3xl font-bold accent-text">Professional</p>
+                <p class="text-sm text-slate-400 uppercase tracking-widest mt-1">Badminton Player</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <p class="text-3xl font-bold accent-text">Certified</p>
+                <p class="text-sm text-slate-400 uppercase tracking-widest mt-1">Research Author</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <p class="text-3xl font-bold accent-text">2025</p>
+                <p class="text-sm text-slate-400 uppercase tracking-widest mt-1">Modeling Finalist</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <p class="text-3xl font-bold accent-text">CRM</p>
+                <p class="text-sm text-slate-400 uppercase tracking-widest mt-1">Expertise</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-4xl font-bold mb-16 flex items-center">
+                <span class="w-12 h-1 bg-amber-500 mr-4"></span> Career & Growth
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div data-aos="fade-up" class="card p-10 rounded-3xl border border-slate-700">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-briefcase text-2xl accent-text"></i>
+                        </div>
+                        <span class="text-xs text-slate-500 font-mono tracking-widest">INTERNSHIP</span>
+                    </div>
+                    <h3 class="text-2xl font-bold">CRM Intern</h3>
+                    <p class="text-amber-500 font-medium mb-6">Phelix Creatives</p>
+                    <ul class="text-slate-400 space-y-4">
+                        <li><i class="fas fa-check text-amber-500 mr-3"></i> Database management & client coordination.
+                        </li>
+                        <li><i class="fas fa-check text-amber-500 mr-3"></i> Developed professional communication
+                            workflows.</li>
+                        <li><i class="fas fa-check text-amber-500 mr-3"></i> Resolved customer queries & supported
+                            teams.</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="card p-10 rounded-3xl border border-slate-700">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-2xl accent-text"></i>
+                        </div>
+                        <span class="text-xs text-slat  e-500 font-mono tracking-widest">EDUCATION</span>
+                    </div>
+                    <h3 class="text-2xl font-bold">Bachelor of Commerce</h3>
+                    <p class="text-amber-500 font-medium mb-6">Mumbai University (T.Y.B.Com)</p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Focusing on Commerce, Management, and Corporate Finance. Applying academic theories to
+                        real-world business challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-24 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 data-aos="fade-left" class="text-4xl font-bold mb-16 text-right flex items-center justify-end">
+                Key Recognition <span class="w-12 h-1 bg-amber-500 ml-4"></span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="flip-left"
+                    class="p-8 border border-slate-700 rounded-2xl hover:border-amber-500/50 transition">
+                    <i class="fas fa-award text-3xl accent-text mb-4"></i>
+                    <h4 class="font-bold text-xl mb-3">Best Research Paper</h4>
+                    <p class="text-slate-400 text-sm">"Custom Operating System (OS)" – Registered & certified for
+                        innovation.</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="200"
+                    class="p-8 border border-slate-700 rounded-2xl hover:border-amber-500/50 transition">
+                    <i class="fas fa-handshake text-3xl accent-text mb-4"></i>
+                    <h4 class="font-bold text-xl mb-3">Board Room Battle</h4>
+                    <p class="text-slate-400 text-sm">Won "Best Company Award" for strategic leadership in corporate
+                        simulations.</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="400"
+                    class="p-8 border border-slate-700 rounded-2xl hover:border-amber-500/50 transition">
+                    <i class="fas fa-crown text-3xl accent-text mb-4"></i>
+                    <h4 class="font-bold text-xl mb-3">Pageantry Titles</h4>
+                    <p class="text-slate-400 text-sm">Charming Princess (2020) & Mesmeric Fashion Fest (2025).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sports" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-4xl font-bold mb-16 flex items-center">
+                <span class="w-12 h-1 bg-amber-500 mr-4"></span> Professional Sports
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                <div data-aos="zoom-in" data-aos-delay="100" class="card p-8 rounded-2xl border border-slate-700">
+    <svg class="w-12 h-12 mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C10.8954 2 10 2.89543 10 4V7H14V4C14 2.89543 13.1046 2 12 2Z" fill="#fbbf24"/>
+        <path d="M7 9L10 22H14L17 9H7Z" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 13H14M9.5 17H14.5" stroke="#fbbf24" stroke-width="1.5"/>
+    </svg>
+    <p class="font-bold">Badminton</p>
+</div>
+                <div data-aos="zoom-in" data-aos-delay="200" class="card p-8 rounded-2xl border border-slate-700">
+                    <i class="fas fa-chess-knight text-4xl accent-text mb-4"></i>
+                    <p class="font-bold">Chess</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300" class="card p-8 rounded-2xl border border-slate-700">
+                    <i class="fas fa-skating text-4xl accent-text mb-4"></i>
+                    <p class="font-bold">Skating</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="400" class="card p-8 rounded-2xl border border-slate-700">
+                    <i class="fas fa-table-tennis text-4xl accent-text mb-4"></i>
+                    <p class="font-bold">Table Tennis</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="500" class="card p-8 rounded-2xl border border-slate-700">
+                    <i class="fas fa-circle-dot text-4xl accent-text mb-4"></i>
+                    <p class="font-bold">Carrom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 bg-slate-950 px-6 text-center">
+        <div data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-8">Ready to Collaborate?</h2>
+            <p class="text-slate-400 mb-12 max-w-xl mx-auto text-lg">
+                Connect with me instantly for management roles, branding, or professional inquiries.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-16">
+                <a href="https://wa.me/9321128886?text=Hi%20Reva%2C%20I%20reviewed%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20exploring%20a%20collaboration%20with%20you."
+                    target="_blank"
+                    class="flex items-center justify-center gap-3 px-6 py-4 bg-green-600 hover:bg-green-500 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-lg shadow-green-900/20 animate-pulse-slow">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    WhatsApp
+                </a>
+
+                <a href="https://instagram.com/__.reeva.___" target="_blank"
+                    class="flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 hover:opacity-90 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/in/reva-kamble-a51846360/" target="_blank"
+                    class="flex items-center justify-center gap-3 px-6 py-4 bg-[#0077b5] hover:bg-[#00669c] text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    LinkedIn
+                </a>
+
+            <button onclick="copyEmail()" 
+        id="emailBtn"
+        class="flex items-center justify-center gap-3 px-6 py-4 bg-slate-100 hover:bg-white text-slate-900 font-bold rounded-xl transition-all transform hover:scale-105 shadow-lg w-full">
+    <i class="fas fa-copy text-2xl text-amber-500" id="emailIcon"></i>
+    <span id="emailText">reva21@gmail.com</span>
+</button>
+
+<script>
+function copyEmail() {
+    // The email to copy
+    const email = "reva21@gmail.com";
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(email).then(() => {
+        const btn = document.getElementById('emailBtn');
+        const text = document.getElementById('emailText');
+        const icon = document.getElementById('emailIcon');
+
+        // Visual Feedback
+        text.innerText = "Email Copied!";
+        btn.classList.replace('bg-slate-100', 'bg-amber-500');
+        btn.classList.add('text-white');
+        icon.classList.replace('fa-copy', 'fa-check');
+        icon.classList.replace('text-amber-500', 'text-white');
+
+        // Reset button after 2 seconds
+        setTimeout(() => {
+            text.innerText = "reva21@gmail.com";
+            btn.classList.replace('bg-amber-500', 'bg-slate-100');
+            btn.classList.remove('text-white');
+            icon.classList.replace('fa-check', 'fa-copy');
+            icon.classList.replace('text-white', 'text-amber-500');
+        }, 2000);
+    });
+}
+</script>
+            </div>
+
+            <p class="text-[10px] text-slate-700 uppercase tracking-[0.5em]">
+                © All Rights Reserved | Reva Kamble 
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
+    </script>
+</body>
+
+</html>
